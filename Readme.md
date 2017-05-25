@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Nikita Shumakov](https://up.htmlacademy.ru/adaptive/11/user/305185).
-* Наставник: `Неизвестно`.
+* Наставник: [Anton Popov](https://up.htmlacademy.ru/adaptive/11/user/78239).
 
 ---
 
