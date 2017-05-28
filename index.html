@@ -10,21 +10,19 @@
         <img src="#" alt="Логотип Мишка">
       </div>
       <nav class="main-nav">
-        <span class="main-nav__toggler"></span>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-            <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
-            <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
-            <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
-          </ul>
-        </div>
+        <button class="main-nav__toggler"></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
+          <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+        </ul>
       </nav>
       <div class="second-nav">
         <h1 class="second-nav__title">Милые штуки ручной работы для дома</h1>
         <div class="second-nav__list">
-          <a class="second-nav__item second-nav__interier" href="#"></a>
-          <a class="second-nav__item second-nav__toys" href="#"></a>
+          <a class="second-nav__item second-nav--interier" href="#">Предметы интерьера</a>
+          <a class="second-nav__item second-nav--toys" href="#">Детские игрушки</a>
         </div>
       </div>
     </header>
@@ -33,25 +31,34 @@
         <h2 class="most-popular__title">Вязаные корзинки</h2>
         <h3 class="most-popular__subtitle">Товар недели</h3>
         <p class="most-popular__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <p class="most-popular__parameters most-popular__color">«Тиффани»/серый</p>
-        <p class="most-popular__parameters most-popular__diameter">Диаметр: 25 см</p>
-        <p class="most-popular__parameters most-popular__height">Высота: 15 см</p>
-        <div class="most-popular__img">
-          <img src="#">
-        </div>
+        <table>
+          <tr>
+            <td>Цвет:</td>
+            <td>Тиффани/серый</td>
+          </tr>
+          <tr>
+            <td>Диаметр:</td>
+            <td>25 см</td>
+          </tr>
+          <tr>
+            <td>Высота:</td>
+            <td>15 см</td>
+          </tr>
+        </table>
+        <img class="most-popular__img" src="#" alt="Вязаные корзинки">
         <p class="most-popular__price">Цена: 990 руб.</p>
-        <a class="btn most-popular__btn" href="#">Заказать</a>
+        <a class="btn" href="#">Заказать</a>
       </section>
       <section class="advantages">
         <h2 class="advantages__title">Коротко о нас:</h2>
-        <div class="advantages__list">
-          <p class="advantages__item advantages__item--ecology"></p>
-          <p class="advantages__item advantages__item--price"></p>
-          <p class="advantages__item advantages__item--likes"></p>
-          <p class="advantages__item advantages__item--handmade"></p>
-          <p class="advantages__item advantages__item--support"></p>
-          <p class="advantages__item advantages__item--gift-box"></p>
-        </div>
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__item--ecology"></li>
+          <li class="advantages__item advantages__item--price"></li>
+          <li class="advantages__item advantages__item--likes"></li>
+          <li class="advantages__item advantages__item--handmade"></li>
+          <li class="advantages__item advantages__item--support"></li>
+          <li class="advantages__item advantages__item--gift-box"></li>
+        </ul>
       </section>
       <section class="reviews">
         <h2 class="reviews__title">Отзывы</h2>
@@ -66,7 +73,7 @@
           <a class="reviews__pagination-item reviews__pagination-item--previous" href="#">Предыдущая страница</a>
           <a class="reviews__pagination-item reviews__pagination-item--next" href="#">Следующая страница</a>
         </div>
-        <a class="btn reviews__button" href="#">Написать</a>
+        <a class="btn" href="#">Написать</a>
       </section>
       <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
@@ -78,8 +85,8 @@
           <p class="contacts__address">адрес:</p>
           <p class="contacts__address-info">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
         </div>
-        <map></map>
-        <a class="btn contacts__btn" href="#">Напишите нам</a>
+        <div class="map"></div>
+        <a class="btn" href="#">Напишите нам</a>
       </section>
     </main>
     <footer class="page-footer">
@@ -92,7 +99,7 @@
       </div>
       <p class="page-footer__copyright">
         Разработано
-        <a class="btn page-footer__copyright-link" href="#"><img src="#"></a>
+        <a class="btn page-footer__copyright-link" href="#"><img src="#" alt="HTML Academy"></a>
       </p>
     </footer>
   </body>
