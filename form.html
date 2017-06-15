@@ -22,34 +22,36 @@
     </header>
     <main>
       <section class="custom-made">
-        <h1 class="custom-made__title">Вязание на заказ</h1>
+        <div class="custom-made__title">
+          <h1>Вязание на заказ</h1>
+        </div>
         <div class="custom-made__wrapper">
         <p class="custom-made__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form action="https://echo.htmlacademy.ru" method="get">
-          <div class="custom-made__type">
-            <h3>Тип</h3>
+          <div class="custom-made__radio">
+            <h3 class="custom-made__form-title">Тип</h3>
             <input type="radio" name="type" id="accessory" value="accessory" checked>
             <label for="accessory">Аксессуар для интерьера</label>
             <input type="radio" name="type" id="kids-toy" value="kids-toy">
-            <label for="accessory">Детская игрушка</label>
+            <label for="kids-toy">Детская игрушка</label>
           </div>
-          <div class="custom-made__color">
-            <h3>Цвет</h3>
+          <div class="custom-made__checkbox">
+            <h3 class="custom-made__form-title">Цвет</h3>
             <input type="checkbox" name="color" id="white" value="white" checked>
-            <label for="accessory">Белый</label>
+            <label for="white">Белый</label>
             <input type="checkbox" name="color" id="gray" value="gray" checked>
-            <label for="accessory">Серый</label>
+            <label for="gray">Серый</label>
             <input type="checkbox" name="color" id="tiffany" value="tiffany">
-            <label for="accessory">«Тиффани»</label>
+            <label for="tiffany">«Тиффани»</label>
             <input type="checkbox" name="color" id="black" value="black">
-            <label for="accessory">Черный</label>
+            <label for="black">Черный</label>
             <input type="checkbox" name="color" id="pink" value="pink">
-            <label for="accessory">Розовый</label>
+            <label for="pink">Розовый</label>
             <input type="checkbox" name="color" id="orange" value="orange">
-            <label for="accessory">Оранжевый</label>
+            <label for="orange">Оранжевый</label>
           </div>
           <div class="custom-made__full-name">
-            <h3>ФИО</h3>
+            <h3 class="custom-made__form-title">ФИО</h3>
             <label for="first-name">Имя:</label>
             <input type="text" name="first-name" id="first-name" placeholder="Введите ваше имя&#42;" required >
             <label for="last-name">Фамилия:</label>
@@ -58,15 +60,15 @@
             <input type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
           </div>
           <div class="custom-made__tel">
-            <h3>Тел</h3>
+            <h3 class="custom-made__form-title">Тел</h3>
             <input class="custom-made__tel" type="tel" name="tel" placeholder="+7 XXX XX XX&#42;">
           </div>
           <div class="custom-made__email">
-            <h3>E-mail</h3>
+            <h3 class="custom-made__form-title">E-mail</h3>
             <input class="custom-made__email" type="email" name="email" placeholder="Ваш Email&#42;">
           </div>
           <div class="custom-made__additionally">
-            <h3>Доп</h3>
+            <h3 class="custom-made__form-title">Доп</h3>
             <textarea name="wishes-to-order" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             <p class="custom-made__additionally-note"><sup>*</sup>Поля обязательны для заполнения</p>
             <input class="btn" type="submit" value="Отправить заказ">
@@ -81,7 +83,7 @@
         <div class="social-links">
           <a class="social-links__link social-links__link--inst" href="#"></a>
           <a class="social-links__link social-links__link--fb" href="#"></a>
-          <a class="social-links__link social-links__link--vk" href="#"></a>
+          <a class="social-links__link social-links__link--twitter" href="#"></a>
         </div>
       </div>
       <p class="page-footer__copyright">
