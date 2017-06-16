@@ -1,13 +1,37 @@
+.main-nav {
+  .container();
+}
+
+.main-nav__wrapper {
+  width: 175px;
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+}
+
+.main-nav__toggler {
+  font-size: 0;
+  width: 20px;
+  height: 14px;
+  background: url("../../img/icon-menu-open.svg");
+  border: none;
+  cursor: pointer;
+  margin: auto 0;
+  margin-left: auto;
+}
+
 .main-nav__list {
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
   list-style-type: none;
-  margin-left: 0px;
-  padding-left: 0px;
+  margin: 0;
+  padding: 0;
+  display: none;
 }
 
 .main-nav__item a {
-  text-decoration: none;
   color: black;
+  text-decoration: none;
 }
