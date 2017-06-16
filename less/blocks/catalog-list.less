@@ -18,10 +18,8 @@
 
 .catalog-list__item {
   margin-bottom: 31px;
-}
-
-.catalog-list__item img {
-  margin-bottom: -2px;
+  display: flex;
+  flex-direction: column;
 }
 
 .catalog-list__item-wrapper {
@@ -55,4 +53,15 @@
 .catalog-list__item-price {
   font-size: 15px;
   line-height: 24px;
+}
+
+@media @tablet-widths {
+  .catalog-list__item {
+    flex-direction: row;
+  }
+  
+  .catalog-list__item-wrapper {
+    min-height: 334px;
+    width: 334px;
+  }
 }
