@@ -11,6 +11,10 @@
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
+  color: @gray-color;
+  width: 100%;
+  margin-top: 24px;
+  margin-left: 0;
 }
 
 .reviews__author-name {
@@ -18,9 +22,35 @@
   line-height: 24px;
   font-weight: 700;
   font-style: normal;
+  color: black;
+}
+
+.reviews__pagination {
+  font-size: 0;
+}
+
+.reviews__pagination-item {
+  display: inline-block;
+  width: 50px;
+  height: 27px;
+  outline: 1px #ececec solid;
+  padding: 13px 40px;
+  margin-bottom: 40px;
+}
+
+.reviews__pagination-item--previous {
+  background-image: url("../../img/icon-left-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.reviews__pagination-item--next {
+  background-image: url("../../img/icon-right-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .reviews .btn {
   font-size: 18px;
-  padding: 14px 78px;
+  padding: 14px 79px;
 }

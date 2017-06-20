@@ -3,11 +3,13 @@
 
 .advantages__wrapper {
   .container();
+  padding-top: 1px;
 }
 
 .advantages__title {
   font-size: 25px;
   line-height: 30px;
+  margin-top: 27px;
 }
 
 .advantages__list {
@@ -16,4 +18,53 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media @tablet {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 370px;
+  }
+}
+
+.advantages__item {
+  padding-top: 83px;
+
+  &--ecology {
+    background: url("../../img/icon-feature-1.svg") no-repeat;
+    background-position: 8px 10px;
+    padding-top: 65px;
+    width: 195px;
+  }
+
+  &--price {
+    background: url("../../img/icon-feature-3.svg") no-repeat;
+    background-position: 0px 30px;
+    width: 200px;
+  }
+
+  &--likes {
+    background: url("../../img/icon-feature-5.svg") no-repeat;
+    background-position: 7px 34px;
+    width: 195px;
+  }
+
+  &--handmade {
+    background: url("../../img/icon-feature-2.svg") no-repeat;
+    background-position: 4px 10px;
+    padding-top: 65px;
+    width: 210px;
+  }
+
+  &--support {
+    background: url("../../img/icon-feature-4.svg") no-repeat;
+    background-position: 0px 33px;
+    width: 250px;
+  }
+
+  &--gift-box {
+    background: url("../../img/icon-feature-6.svg") no-repeat;
+    background-position: 3px 30px;
+    width: 200px;
+  }
 }
