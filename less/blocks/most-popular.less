@@ -1,10 +1,13 @@
 .most-popular {
   padding-top: 1px;
+
+  @media @tablet {
+    padding: 40px 0;
+  }
 }
 
 .most-popular__wrapper {
   .container();
-  padding-bottom: 40px;
 
   @media @tablet {
     position: relative;
@@ -80,5 +83,8 @@
 }
 
 .most-popular__good {
+
+  @media @tablet {
   width: 40%;
+  }
 }

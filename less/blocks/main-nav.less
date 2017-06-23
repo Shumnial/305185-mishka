@@ -4,6 +4,7 @@
 
 .main-nav__wrapper {
   .container();
+  position: relative;
   min-height: 80px;
   display: flex;
   justify-content: space-between;
@@ -37,8 +38,7 @@
   @media @tablet {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    margin: auto 0;
+    flex-wrap: wrap;
   }
 }
 
@@ -52,13 +52,29 @@
 
   @media @tablet {
     order: 1;
-    display: none;
+    position: absolute;
+    top: 90px;
+    left: 50px;
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    font-size: 15px;
+
+    @media @desktop {
+      position: inherit;
+      order: -1;
+      font-size: 17px;
+      width: 350px;
+    }
   }
 }
 
 .main-nav__help {
   display: flex;
   width: 370px;
+  @media @desktop {
+    order: 0;
+  }
 }
 
 .main-nav__item--search {
@@ -85,6 +101,18 @@
 
   @media @tablet {
     display: none;
+  }
+
+  @media @desktop {
+    display: flex;
+    position: absolute;
+    top: 90px;
+    left: 100px;
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    font-size: 15px;
+
   }
 }
 
