@@ -2,6 +2,10 @@
   .container();
 }
 
+.custom-made input {
+  outline: 0;
+}
+
 .custom-made__title {
   min-height: 177px;
   background-color: #f1f1f1;
@@ -24,9 +28,49 @@
   color: @gray-color;
 }
 
-.custom-made__radio, .custom-made__checkbox, .custom-made__full-name {
+.custom-made__radio,
+.custom-made__checkbox,
+.custom-made__full-name {
+  @media @tablet {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.custom-made__radio-items,
+.custom-made__checkbox-items,
+.custom-made__name-items {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.custom-made__radio-items {
+
+  @media @tablet {
+    width: 450px;
+    margin-left: 125px;
+  }
+}
+
+.custom-made__checkbox-items {
+
+  @media @tablet {
+    width: 65%;
+    max-height: 235px;
+    justify-content: space-between;
+    margin-left: 117px;
+  }
+}
+
+.custom-made__radio-items input,
+.custom-made__checkbox-items input {
+  display: none;
+}
+
+.custom-made__radio-items label,
+.custom-made__checkbox-items label {
+  margin-top: 20px;
 }
 
 .custom-made__form-title {
@@ -36,10 +80,109 @@
   text-transform: uppercase;
 }
 
-.custom-made__additionally .btn {
-  padding: 14px 46px;
+.custom-made__radio-switch {
+  display: inline-block;
+  width: 36px;
+  height: 35px;
+  vertical-align: middle;
+  border: 2px @gray-color solid;
+  border-radius: 50%;
+  margin-right: 25px;
 }
 
-@media @tablet-widths {
+.custom-made__checkbox-switch {
+  display: inline-block;
+  width: 36px;
+  height: 35px;
+  vertical-align: middle;
+  border: 2px @gray-color solid;
+  margin-right: 25px;
+}
 
+.custom-made__name {
+
+  @media @tablet {
+    display: flex;
+  }
+}
+
+.custom-made__name-items {
+
+  @media @tablet {
+    margin-left: 120px;
+  }
+}
+
+.custom-made__name-items label {
+  margin-top: 20px;
+}
+
+.custom-made__name-items input {
+  padding: 10px 0;
+  border: 0;
+  border-bottom: 2px black solid;
+
+}
+
+.custom-made__tel,
+.custom-made__email {
+
+  @media @tablet {
+  display: flex;
+  flex-direction: row;
+  }
+}
+
+.custom-made__email h3 {
+  min-width: 82px;
+}
+
+.custom-made__tel-info {
+  margin-left: 125px;
+  margin-top: 10px;
+}
+
+.custom-made__tel-field,
+.custom-made__email-field {
+  width: 100%;
+  padding: 10px 0;
+  border: 0;
+  border-bottom: 2px black solid;
+
+  @media @tablet {
+    height: 10px;
+    margin-top: 10px;
+    padding: 10px 0;
+    padding-left: 18px;
+    border: 0;
+    border-bottom: 2px black solid;
+  }
+}
+
+.custom-made__tel-field {
+
+  @media @tablet {
+    margin-left: 125px;
+  }
+}
+
+.custom-made__email-field {
+
+  @media @tablet {
+    margin-left: 75px;
+  }
+}
+
+.custom-made__additionally textarea {
+  width: 100%;
+  min-height: 138px;
+  border: 2px black solid;
+  padding: 0 10px;
+  padding-top: 15px;
+  box-sizing: border-box;
+}
+
+.custom-made__additionally .btn {
+  padding: 14px 46px;
+  background-color: white;
 }
