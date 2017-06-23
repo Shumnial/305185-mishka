@@ -19,18 +19,18 @@
           </ul>
         </div>
       </nav>
+      <div class="page-header__form-title">
+          <h1>Вязание на заказ</h1>
+      </div>
     </header>
     <main>
       <section class="custom-made">
-        <div class="custom-made__title">
-          <h1>Вязание на заказ</h1>
-        </div>
         <div class="custom-made__wrapper">
           <p class="custom-made__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
           <form action="https://echo.htmlacademy.ru" method="get">
             <div class="custom-made__radio">
               <h3 class="custom-made__form-title">Тип</h3>
-              <div class="custom-made__additional-wrapper">
+              <div class="custom-made__radio-items">
                 <input type="radio" name="type" id="accessory" value="accessory" checked>
                 <label for="accessory"><span class="custom-made__radio-switch"></span>Аксессуар для интерьера</label>
                 <input type="radio" name="type" id="kids-toy" value="kids-toy">
@@ -39,7 +39,7 @@
             </div>
             <div class="custom-made__checkbox">
               <h3 class="custom-made__form-title">Цвет</h3>
-              <div class="custom-made__additional-wrapper">
+              <div class="custom-made__checkbox-items">
                 <input type="checkbox" name="color" id="white" value="white" checked>
                 <label for="white"><span class="custom-made__checkbox-switch"></span>Белый</label>
                 <input type="checkbox" name="color" id="gray" value="gray" checked>
@@ -54,11 +54,11 @@
                 <label for="orange"><span class="custom-made__checkbox-switch"></span>Оранжевый</label>
               </div>
             </div>
-            <div class="custom-made__full-name">
+            <div class="custom-made__name">
               <h3 class="custom-made__form-title">ФИО</h3>
-              <div class="custom-made__additional-wrapper">
+              <div class="custom-made__name-items">
                 <label for="first-name">Имя:</label>
-                <input type="text" name="first-name" id="first-name" placeholder="Введите ваше имя&#42;" required >
+                <input type="text" name="first-name" id="first-name" placeholder="Введите ваше имя&#42;" required>
                 <label for="last-name">Фамилия:</label>
                 <input type="text" name="last-name" id="last-name" placeholder="Укажите фамилию&#42;" required>
                 <label for="patronymic">Отчество:</label>
@@ -67,11 +67,13 @@
             </div>
             <div class="custom-made__tel">
               <h3 class="custom-made__form-title">Тел</h3>
-              <input class="custom-made__tel" type="tel" name="tel" placeholder="+7 XXX XX XX&#42;">
+
+              <input class="custom-made__tel-field" type="tel" name="tel" placeholder="+7 XXX XX XX&#42;">
+
             </div>
             <div class="custom-made__email">
               <h3 class="custom-made__form-title">E-mail</h3>
-              <input class="custom-made__email" type="email" name="email" placeholder="Ваш Email&#42;">
+              <input class="custom-made__email-field" type="email" name="email" placeholder="Ваш Email&#42;">
             </div>
             <div class="custom-made__additionally">
               <h3 class="custom-made__form-title">Доп</h3>
