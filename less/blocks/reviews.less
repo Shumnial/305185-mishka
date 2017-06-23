@@ -3,15 +3,12 @@
 
 .reviews__wrapper {
   .container();
+  position: relative;
 
   @media @tablet {
   min-height: 457px;
-  }
-
-  @media @tablet {
   background-image: url(../img/review@1x.jpg);
   background-repeat: no-repeat;
-  background-position: 5% 0;
   }
 }
 
@@ -21,6 +18,8 @@
 
   @media @tablet {
     font-size: 43px;
+    padding-top: 87px;
+    margin-bottom: 59px;
   }
 }
 
@@ -30,12 +29,25 @@
   font-weight: 400;
   color: @gray-color;
   width: 100%;
-  margin-top: 24px;
   margin-left: 0;
 
   @media @tablet {
     font-size: 17px;
     line-height: 30px;
+  }
+}
+
+.reviews__item-text {
+
+  @media @tablet {
+    margin-bottom: 55px;
+  }
+}
+
+.reviews__author-info {
+
+  @media @tablet {
+    width: 255px;
   }
 }
 
@@ -45,10 +57,20 @@
   font-weight: 700;
   font-style: normal;
   color: black;
+
+  @media @tablet {
+    font-size: 18px;
+  }
 }
 
 .reviews__pagination {
   font-size: 0;
+
+  @media @tablet {
+    position: absolute;
+    bottom: 62px;
+    right: 68px;
+  }
 }
 
 .reviews__pagination-item {
@@ -58,6 +80,18 @@
   outline: 1px #ececec solid;
   padding: 13px 40px;
   margin-bottom: 40px;
+
+  @media @tablet {
+    padding: 0;
+    outline: 0;
+    margin: 0;
+  }
+
+  &--previous {
+  @media @tablet {
+    margin-right: 37px;
+    }
+  }
 }
 
 .reviews__pagination-item--previous {
@@ -75,4 +109,12 @@
 .reviews .btn {
   font-size: 18px;
   padding: 14px 79px;
+
+  @media @tablet {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    font-size: 17px;
+    padding: 14px 38px;
+  }
 }

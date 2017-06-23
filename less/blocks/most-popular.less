@@ -5,6 +5,10 @@
 .most-popular__wrapper {
   .container();
   padding-bottom: 40px;
+
+  @media @tablet {
+    position: relative;
+  }
 }
 
 .most-popular__title {
@@ -12,15 +16,27 @@
   line-height: 30px;
   margin-bottom: 6px;
   margin-top: 26px;
+
+  @media @tablet {
+    font-size: 43px;
+  }
 }
 
 .most-popular__subtitle {
   font-size: 17px;
-  line-height: 20px;
+  line-height: 17px;
   color: #63d1bb;
   text-transform: uppercase;
   margin-top: 0px;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
+
+  @media @tablet {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    width: 70px;
+    text-align: center;
+  }
 }
 
 .most-popular__description {
@@ -30,14 +46,30 @@
   color: @gray-color;
 }
 
-.most-popular table {
+.most-popular__parameters {
   font-size: 15px;
   line-height: 20px;
   font-weight: 400;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.most-popular__parameters td {
+  padding: 10px 0;
+  padding-right: 30px;
+  border-bottom: 1px #ececec solid;
+}
+
+.most-popular__parameters td:nth-child(2n) {
+  padding-right: 0;
 }
 
 .most-popular__price {
   font-size: 17px;
   line-height: 24px;
   text-align: center;
+}
+
+.most-popular__img {
+
 }
