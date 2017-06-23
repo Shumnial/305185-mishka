@@ -42,11 +42,19 @@
   color: @gray-color;
   margin-top: 0px;
   margin-bottom: 21px;
-  padding-bottom: 19px;
-  border-bottom: 1px #ececec solid;
 }
 
 .catalog-list__item-price {
   font-size: 15px;
   line-height: 24px;
+  padding-top: 19px;
+  border-top: 1px #ececec solid;
+  display: block;
+  background-image: url(../../img/icon-cart.svg);
+  background-repeat: no-repeat;
+  background-position: right 100%;
+
+  @media @tablet {
+    margin-top: 180px;
+  }
 }

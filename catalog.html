@@ -9,13 +9,23 @@
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__wrapper">
-          <a class="logo" href="index.html"></a>
+          <div class="logo">
+            <a href="index.html"><img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка"></a>
+          </div>
           <button class="main-nav__toggler">Меню</button>
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-            <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
-            <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
-            <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+            <div class="main-nav__goods">
+              <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+              <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+            </div>
+            <div class="main-nav__help">
+              <li class="main-nav__item main-nav__item--search"><a href="#">Поиск по сайту</a></li>
+              <li class="main-nav__item main-nav__item--basket"><a href="#">Корзина: пока пуста</a></li>
+            </div>
+            <div class="main-nav__deals">
+              <li class="main-nav__item"><a href="#">Новые поступления</a></li>
+              <li class="main-nav__item"><a href="#">Распродажа</a></li>
+            </div>
           </ul>
         </div>
       </nav>
@@ -73,10 +83,10 @@
             <a class="social-links__link social-links__link--twitter" href="#"></a>
           </div>
         </div>
-        <p class="page-footer__copyright">
-          Разработано
+        <div class="page-footer__copyright">
+          <p>Разработано</p>
           <a class="page-footer__copyright-link" href="#"></a>
-        </p>
+        </div>
       </div>
     </footer>
     <div class="modal-content">

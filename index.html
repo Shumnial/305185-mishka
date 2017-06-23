@@ -13,17 +13,19 @@
             <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
           </div>
           <button class="main-nav__toggler">Меню</button>
-          <ul class="main-nav__list main-nav__list--goods">
-            <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-            <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
-          </ul>
-          <ul class="main-nav__list main-nav__list--help">
-            <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
-            <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
-          </ul>
-          <ul class="main-nav__list main-nav__list--deals">
-            <li class="main-nav__item"><a href="#"></a></li>
-            <li class="main-nav__item"><a href="#"></a></li>
+          <ul class="main-nav__list">
+            <div class="main-nav__goods">
+              <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+              <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+            </div>
+            <div class="main-nav__help">
+              <li class="main-nav__item main-nav__item--search"><a href="#">Поиск по сайту</a></li>
+              <li class="main-nav__item main-nav__item--basket"><a href="#">Корзина: пока пуста</a></li>
+            </div>
+            <div class="main-nav__deals">
+              <li class="main-nav__item"><a href="#">Новые поступления</a></li>
+              <li class="main-nav__item"><a href="#">Распродажа</a></li>
+            </div>
           </ul>
         </div>
       </nav>
@@ -40,24 +42,26 @@
         <div class="most-popular__wrapper">
           <h2 class="most-popular__title">Вязаные корзинки</h2>
           <h3 class="most-popular__subtitle">Товар недели</h3>
-          <p class="most-popular__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-          <table class="most-popular__parameters">
-            <tr class="most-popular__parameters-color">
-              <td>Цвет:</td>
-              <td>«Тиффани»/серый</td>
-            </tr>
-            <tr class="most-popular__parameters-diameter">
-              <td>Диаметр:</td>
-              <td>25 см</td>
-            </tr>
-            <tr class="most-popular__parameters-height">
-              <td>Высота:</td>
-              <td>15 см</td>
-            </tr>
-          </table>
-          <img class="most-popular__img" src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки">
-          <p class="most-popular__price">Цена: 990 руб.</p>
-          <a class="btn" href="#">Заказать</a>
+          <div class="most-popular__good">
+            <p class="most-popular__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+            <table class="most-popular__parameters">
+              <tr class="most-popular__parameters-color">
+                <td>Цвет:</td>
+                <td>«Тиффани»/серый</td>
+              </tr>
+              <tr class="most-popular__parameters-diameter">
+                <td>Диаметр:</td>
+                <td>25 см</td>
+              </tr>
+              <tr class="most-popular__parameters-height">
+                <td>Высота:</td>
+                <td>15 см</td>
+              </tr>
+            </table>
+            <img class="most-popular__img" src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки">
+            <p class="most-popular__price">Цена: 990 руб.</p>
+            <a class="btn" href="#">Заказать</a>
+          </div>
         </div>
       </section>
       <section class="advantages">
